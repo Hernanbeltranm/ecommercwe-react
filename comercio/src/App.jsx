@@ -1,7 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from './components/Navbar'
 import ProductCard from './components/ProductCard'
@@ -16,9 +12,26 @@ function App() {
         <h3>Find everything you need in one place</h3>
       </section>
 
-      <ProductCard title="Laptop" price={2000} />
-      <ProductCard title="Mouse" price={50} />
-      <ProductCard title="Teclado" price={100} />
+      <div className="products-grid">
+        <ProductCard
+          title="Laptop"
+          price={2000}
+          description="Laptop ultradelgada con procesador Intel Core i7, 16GB RAM y 512GB SSD."
+          image="https://picsum.photos/seed/laptop/300/200"
+        />
+        <ProductCard
+          title="Mouse Inalámbrico"
+          price={50}
+          description="Mouse ergonómico con sensor óptico de alta precisión y conexión Bluetooth."
+          image="https://picsum.photos/seed/mouse/300/200"
+        />
+        <ProductCard
+          title="Teclado Mecánico"
+          price={100}
+          description="Teclado mecánico RGB con switches Blue, ideal para gaming y programación."
+          image="https://picsum.photos/seed/keyboard/300/200"
+        />
+      </div>
 
     </section>
 
